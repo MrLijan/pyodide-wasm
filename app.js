@@ -11,7 +11,6 @@ runBtn.addEventListener('click', async () => {
 // PYODIDE
 let pyodide = null
 
-
 async function load() {
   pyodide = await loadPyodide({
     indexURL: "https://cdn.jsdelivr.net/pyodide/v0.19.1/full/"
@@ -26,9 +25,12 @@ async function runCode() {
   let pyodide = await pyodideReadyPromise;
   try {
     let output = await pyodide.runPython(editor.value);
-    terminal.innerText = `>>> ${output}`
+    addToTerminal(output)
   } catch (err) {
     console.log(err);
   }
+}
 
+function addToTerminal(value) {
+  terminal.innerText += `>>>  ${value} \n\n`
 }
