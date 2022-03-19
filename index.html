@@ -13,8 +13,10 @@
 <body>
   <div class="header">
     <h1>Pyodide POC</h1>
+    <div class="run-wrapper">
+      <button id="run-btn" class="btn">Run Code</button>
+    </div>
   </div>
-
   <div class="wrapper">
     <div class="editor">
       <textarea name="editor" id="editor" placeholder="Let's write something"></textarea>
@@ -23,9 +25,6 @@
     <div class="terminal-wrapper">
       <p class="terminal" id="terminal"></p>
     </div>
-  </div>
-  <div class="run-wrapper">
-    <button id="run-btn">Run Code</button>
   </div>
 </body>
 <script src="./app.js"></script>

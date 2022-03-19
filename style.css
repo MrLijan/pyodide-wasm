@@ -17,10 +17,23 @@ body {
   text-align: left;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-  background-color: #1E2833;
-  color: #0EACB5;
+  display: flex;
+  justify-content: space-between;
+
+  background-image: linear-gradient(45deg, #3AB5FB, #328BE2);
+  color: #fff;
   padding: 5px;
   padding-left: 25px;
+}
+
+.run-wrapper {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 5px 15px;
 }
 
 .wrapper {
@@ -43,7 +56,7 @@ body {
   padding-right: 25px;
   overflow: hidden;
   
-  background-color: #1E2833;
+  background-color: #38455C;
   color: #FC7C59;
 
   border: none;
@@ -66,15 +79,6 @@ body {
   height: 100%;
   font-family: 'SF Mono', 'Courier New', Courier, monospace;
   color: white;
-  background-color: #161C1F;
+  background-color: #1D2539;
   font-size: 16px;
-}
-
-.run-wrapper {
-  position: sticky;
-  z-index: 10;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  padding: 25px;
 }
