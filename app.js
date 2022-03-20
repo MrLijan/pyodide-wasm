@@ -27,7 +27,7 @@ async function runCode() {
     let output = await pyodide.runPython(editor.value);
     addToTerminal(output)
   } catch (err) {
-    console.log(err);
+    addToTerminal(err);
   }
 }
 
